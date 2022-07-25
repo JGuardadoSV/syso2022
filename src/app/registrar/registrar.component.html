@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+        <form action="">
+            <h4 class="py-5 text-center">Formulario de registro</h4>
+            
+            <label for="" class="form-label"><b>Email (@itcha.edu.sv)</b></label>
+            <div class="input-group mb-3">
+                
+                <input type="text" class="form-control" id="correo" name="email" [(ngModel)]="usuario.correo" aria-label="Correo" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="correo">@itcha.edu.sv</span>
+              </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label"><b>Contraseña</b></label>
+                <input type="password"  class="form-control" name="clave" [(ngModel)]="usuario.clave" placeholder="" >
+              </div>
+            <button type="submit" class="btn btn-primary"  (click)="registrar()">Registrar</button>
+
+
+        </form>
+    </div>
+    </div>
+</div>

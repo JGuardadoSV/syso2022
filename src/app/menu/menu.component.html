@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <nav class="navbar bg-light">
+          <div class="container-fluid">
+            
+              <p-button type="text" (click)="visibleSidebar1 = true" icon="pi pi-list" label="SYSO - ITCHA"></p-button>
+            
+          </div>
+        </nav>
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  <p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000">
+    <h1 style="font-weight:normal">Opciones</h1>
+    <div class="d-grid gap-2">
+      <button class="btn btn-primary" (click)="ultimosReportes()" type="button">Últimos reportes <i class="pi pi-clock"></i>  </button>
+      <button class="btn btn-danger" (click)="crearReporte()" type="button">Reportar suceso <i class="pi pi-exclamation-circle"></i></button>
+      <button class="btn btn-success" (click)="misReportes()" type="button">Mis reportes <i class="pi pi-list"></i>    </button>
+      <p-button type="text" (click)="salir()"  icon="pi pi-times" label="Salir"></p-button>
+    </div>
+  
+  </p-sidebar>
+
+  
