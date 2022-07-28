@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "syso-2022"
+  },
+  "targets": {
+    "syso-2022": {
+      "hosting": {
+        "syso-app": [
+          "sysoitcha2022"
+        ]
+      }
+    }
+  }
+}

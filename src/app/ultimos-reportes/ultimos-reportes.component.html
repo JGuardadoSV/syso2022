@@ -1,16 +1,16 @@
+<app-menu></app-menu>
 <div class="container">
     <div class="row">
         <h4 class="bg-warning py-4">Últimos reportes <i class="pi pi-clock"></i></h4>
-        <div class="col">
-            <p-card header="20/01/2022" subheader="Por: Josue Guardado"  [style]="{width: '380px'}" styleClass="p-card-shadow">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" *ngFor="let suceso of sucesos">
+            <p-card header="{{suceso.fecha}}" subheader="Por: {{suceso.usuario}}" >
                 <ng-template pTemplate="header">
-                    <img alt="Card" src="https://cdn.pixabay.com/photo/2016/04/05/01/49/crash-1308575_960_720.jpg">
+                    <img alt="Fotografía" src="{{suceso.foto}}" class="peque">
                 </ng-template>
-                <p class="px-2">En la entrada principal sufrio un accidente una persona ajena a la institución</p>
-                <p-badge value="Incidente" severity="success" ></p-badge>
-                <p-badge value="Accidente" severity="warning"  ></p-badge>
-                <p-badge value="Acción insegura" severity="danger"  ></p-badge>
-                <p-badge value="Condición insegura" severity="Primary"  ></p-badge>
+                <p class="px-2">{{suceso.descripcion}}</p>
+
+                <p-badge *ngFor="let cat of suceso.categorias" value="{{cat}}" severity="info" ></p-badge>
+               
             </p-card>
         </div>
         

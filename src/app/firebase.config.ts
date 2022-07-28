@@ -7,6 +7,7 @@
 export const firebaseConfig = {
   apiKey: "AIzaSyCJTzBvKZqK4dTCWMrpIVrHLJRwTTGGGf8",
   authDomain: "syso-2022.firebaseapp.com",
+  databaseURL: "https://syso-2022-default-rtdb.firebaseio.com",
   projectId: "syso-2022",
   storageBucket: "syso-2022.appspot.com",
   messagingSenderId: "753690489861",

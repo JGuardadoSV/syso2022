@@ -16,8 +16,9 @@ import {BadgeModule} from 'primeng/badge';
 import { RegistrarComponent } from './registrar/registrar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {DividerModule} from 'primeng/divider';
+import {HttpClientModule} from '@angular/common/http'
 
-
+//import {  } from "@angular/fire";
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import {DividerModule} from 'primeng/divider';
     BadgeModule,
     ReactiveFormsModule,
     FormsModule,
-    DividerModule
+    DividerModule,
+    HttpClientModule
     
   ],
   providers: [],

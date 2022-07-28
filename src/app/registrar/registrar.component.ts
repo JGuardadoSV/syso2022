@@ -25,7 +25,7 @@ export class RegistrarComponent implements OnInit {
       const auth = getAuth();
       createUserWithEmailAndPassword(
         auth,
-        this.usuario.correo + '@itcha.edu.sv',
+        this.usuario.correo.toLowerCase() + '@itcha.edu.sv',
         this.usuario.clave
       )
         .then((userCredential) => {
@@ -51,5 +51,9 @@ export class RegistrarComponent implements OnInit {
 
       console.log(this.usuario);
     }
+  }
+
+  volver(){
+    this.router.navigate([''])
   }
 }

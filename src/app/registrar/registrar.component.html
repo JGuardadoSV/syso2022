@@ -1,7 +1,11 @@
+
 <div class="container">
-    <div class="row">
-        <div class="col">
-        <form action="">
+    <div class="row text-center">
+        <div class="col-xs-12 col-md-5 pt-5">
+          <h4>SYSO - ITCHA</h4>
+            <img src="https://www.itcha.edu.sv/images/logos/itcha.svg" width="100" alt="Logo Itcha">
+            <hr>
+        <form action="" class="">
             <h4 class="py-5 text-center">Formulario de registro</h4>
             
             <label for="" class="form-label"><b>Email (@itcha.edu.sv)</b></label>
@@ -15,7 +19,8 @@
                 <label for="" class="form-label"><b>Contraseña</b></label>
                 <input type="password"  class="form-control" name="clave" [(ngModel)]="usuario.clave" placeholder="" >
               </div>
-            <button type="submit" class="btn btn-primary"  (click)="registrar()">Registrar</button>
+            <button type="submit" class="btn btn-primary"  (click)="registrar()">Registrar</button> | 
+            <button type="submit" class="btn btn-danger"  (click)="volver()">Volver</button>
 
 
         </form>
